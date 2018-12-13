@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页</title>
+		<link rel="stylesheet" href="css/register.css" type="text/css"/>
+		<script src="js/commont.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="UTF-8"></script>
+
+		<script src="js/register.js" type="text/javascript" charset="UTF-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1><img src="img/logo.png"/></h1>
+			<div class="hl">中关村在线旗下网上商城</div>
+			<div class="hr">
+				<span>已经有Z商城账号？</span>
+				<a href="login.html">立即登录</a>
+			</div>
+		</div>
+		<!--
+        	作者：offline
+        	时间：2018-12-07
+        	描述：
+        -->
+        <div class="register-wrap clearfix">
+			<div class="title">30秒快速注册，加入Z商城</div>
+			<form action="" method="post" name="">
+				<div class="register-module">
+					<ul class="register-tab">                                
+						<li class="current "><span class="iconfont">&#xe645;</span>
+							用户名注册
+						</li> 
+						<li></li>
+					</ul> 
+					<table border="1" width="500px" height="536px">
+						<tr>
+							<td align="right"><i class="iconfont">&#xe625;</i>用户名：</td>
+							<td><input type="text" id="username"/>
+							<span>不能用数字开头,6-12个字符,只能出现字母，数字，下划线</span>
+							</td>
+						</tr>
+						<tr>
+							<td align="right"><i class="iconfont">&#xe625;</i>密码：</td>
+							<td><input type="password" id="oldpsw"/>
+							<span>请填写密码有6-12位数字和字母组成，下划线</span>
+							</td>
+						</tr>
+						<tr>
+							<td align="right"><i class="iconfont">&#xe625;</i>确认密码：</td>
+							<td><input type="password" id="newpsw"/>
+							<span>请确认</span>
+							</td>
+						</tr>
+						<tr>
+							<td align="right"><i class="iconfont">&#xe625;</i>电子邮箱：</td>
+							<td><input type="email" id="email"/>
+							<span>请填写正确的电子邮箱</span>
+							</td>
+						</tr>
+						<tr>
+							<td align="right">
+								性别：
+							</td>
+							<td>
+								<input type="text" id="sex" />
+								<!--男：<input style="width: 15px; height: 15px;" type="radio" value="mal" name="mal" id="sex"/>
+								女：<input style="width: 15px; height: 15px;" type="radio" value="mal" name="mal"/>-->
+							</td>
+							
+						</tr>
+						<tr>
+							<td></td>
+						<td>
+							<input style="width: 13px; height: 13px;" type="checkbox" value="同意"/>同意
+							<a href="http://help.zol.com/index.php?c=Detail&amp;id=1019" target="_blank">《商城用户协议》</a>
+							<a href="http://help.zol.com/index.php?c=Detail&amp;id=1022" target="_blank">《隐私权说明》</a>
+						</td>	
+						</tr>
+						
+						
+						<tr>
+							<td></td>
+						<td id="log">
+							<input type="button" value="注册" id="sub"/>
+						</td>	
+						</tr>
+						
+				</table>
+
+				</div>
+			</form>
+			<div class="zo-right">
+				<p>如果您已经注册，请<a href="https://login.zol.com/">直接登录</a><br/>或者用以下方式登录：</p>
+				<div class="zo-down">
+				
+						
+			  <!--<a target="_blank" href="http://service.zol.com.cn/user/api/weixin/jump.php?backurl=http%3A%2F%2Fwww.zol.com%2F" class="weixin"></a>-->
+						
+						
+				<a target="_blank" href="http://service.zol.com.cn/user/api/sina/jump.php?comeshop=1&amp;backurl=http%3A%2F%2Fwww.zol.com%2F" class="sina"></a>
+				
+				
+				<a target="_blank" href="http://service.zol.com.cn/user/api/qq/libs/oauth/redirect_to_login.php?comeshop=1&amp;backurl=http%3A%2F%2Fwww.zol.com%2F" class="qq"></a>
+				
+				
+				<a target="_blank" href="http://tuan.zol.com/userBinding/alipay/alipay.auth.authorize_php_gb/alipay_auth_authorize.php?fromUrl=http%3A%2F%2Fwww.zol.com%2F" class="alipay"></a>			
+				
+				<a target="_blank" href="http://service.zol.com.cn/user/api/baidu/jump.php?comeshop=1&amp;backurl=http%3A%2F%2Fwww.zol.com%2F" class="baidu"></a>
+				
+
+				</div>
+
+			</div>
+		
+		</div>
+	<div class="footer">
+    	<div class="wrapfix">
+        		<div class="about">
+        			<a href="http://www.rongroad.com" target="_blank">关于Z商城</a>|
+        			<a href="http://www.rongroad.com" target="_blank">联系我们</a>|
+        			<a href="http://help.zol.com" target="_blank">帮助中心</a>
+        		</div>
+        		<div class="copyright">&copy;
+        		<script type="text/javascript">var yearStr;
+            		now = new Date();
+            		yearStr = now.getFullYear();
+            		document.write(yearStr);
+        		</script>. 中关村在线 版权所有
+        		</div>
+    	</div>
+	</div>
+
+	</body>
+</html>

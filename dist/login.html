@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页</title>
+		<link rel="stylesheet" href="css/login.css" type="text/css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript"></script>
+		<script src="js/login.js" type="text/javascript"></script>
+		
+	</head>
+	<body>
+		<div class="header">
+			<h1><img src="img/logo.png"/></h1>
+			<div class="hl">中关村在线旗下网上商城</div>
+			<div class="hr">
+				<span>还没有Z商城账号？</span>
+				<a href="register.html">立即注册</a>
+			</div>
+		</div>
+		<div class="main">
+			<h2><img src="img/ad2_1.jpg"</h2>
+			<div class="main-right">
+				<div class="r-top">
+				<h3 class="curLogin">登录Z商城</h3> 
+                <h3 >商家登录</h3>
+                </div>
+                <form action="" name="" method="post">
+                	<input type="text" value="" autocomplete="off" placeholder="手机/邮箱/用户名" class="text" id="J_loginUser"  maxlength="100" /> 
+                   <input type="password" value="" autocomplete="off" placeholder="密码" class="text" id="J_loginpassword"  maxlength="100" />           
+					<div class="find">
+						<i class="iconfont">&#xe645;</i>
+						<a href="#" class="otherLogin" rel="J_phone">手机动态码登录</a> 
+                                <a target="_blank" href="http://my.zol.com.cn/index.php?c=getPassword" class="forget-password">忘记密码？</a>
+
+					</div>
+					<input type="button" value="登 录" class="login-layer-btn" id="J_loginBtn">
+                	
+                	
+                	
+                </form>
+                	<div class="cor">
+                		
+                		合作账号登录
+                		
+                	</div>
+                	<div class="list">
+                		<!--<a target="_blank" class="weixin iconfont" href="http://service.zol.com.cn/user/api/weixin/jump.php?backurl=http%3A%2F%2Fwww.zol.com%2F">&#xe636;用微信账号登录</a> -->
+<a target="_blank" class="sina" href="http://service.zol.com.cn/user/api/sina/jump.php?comeshop=1&amp;backurl=http%3A%2F%2Fwww.zol.com%2F"></a> 
+<a target="_blank" class="qq" href="http://service.zol.com.cn/user/api/qq/libs/oauth/redirect_to_login.php?comeshop=1&amp;backurl=http%3A%2F%2Fwww.zol.com%2F"></a> 
+
+<a target="_blank" class="alipay" href="http://tuan.zol.com/userBinding/alipay/alipay.auth.authorize_php_gb/alipay_auth_authorize.php?fromUrl=http%3A%2F%2Fwww.zol.com%2F"></a>
+ <a target="_blank" class="baidu" href="http://service.zol.com.cn/user/api/baidu/jump.php?comeshop=1&amp;backurl=http%3A%2F%2Fwww.zol.com%2F"></a> 
+          
+                	</div>
+			</div>
+		</div>
+		<!--
+        	作者：offline
+        	时间：2018-12-08
+        	描述：
+        -->
+     <div class="footer">
+    	<div class="wrapper clearfix">
+        		<div class="about">
+        			<a href="http://www.rongroad.com" target="_blank">关于Z商城</a>|
+        			<a href="http://www.rongroad.com" target="_blank">联系我们</a>|
+        			<a href="http://help.zol.com" target="_blank">帮助中心</a>
+        		</div>
+        		<div class="copyright">&copy;
+        		<script type="text/javascript">var yearStr;
+            		now = new Date();
+            		yearStr = now.getFullYear();
+            		document.write(yearStr);
+        		</script>. 中关村在线 版权所有
+        		</div>
+    	</div>
+	</div>
+		
+		
+	</body>
+	<script type="text/javascript">
+		$("h3").click(function(){
+			$(this).addClass("curLogin").siblings().removeClass("curLogin")
+		
+		})
+		
+		
+	</script>
+</html>

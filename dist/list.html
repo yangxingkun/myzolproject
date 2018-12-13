@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		
+		<style type="text/css">
+			
+		body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{ margin:0;padding:0;}
+		 li{list-style: none;}
+         a{text-decoration: none;}
+        img{display: block;border: none;}
+        #list{margin: 0 auto;width: 1200px;overflow: hidden;}
+		#list li{float: left;width: 230px;height: 300px;padding:0 30px;background: paleturquoise;}
+		li p{width: 230px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;text-align: center;height: 20px;}
+		li>p:nth-child(2){background:red ;opacity: 0.8;border-radius:20px ;}
+			
+			
+			
+			/*onerror="this.src='img/shop_wechat.png'"*/
+			
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="list">
+			
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$.get("http://47.104.244.134:8080/goodsbytid.do",{tid:13,page:5,limit:100},function(data){
+					
+					
+					data = data.data;
+					//console.log(data)
+					var str = "";
+					var arr=[];
+					for(var i = 0; i < data.length; i++){
+						
+						if(data[i].picurl){
+							arr.push(data[i])
+						}
+						//console.log(data[i].name)
+						//console.log(data[i].pubdate)
+					}	
+						//console.log(i)
+					for(var i = 0; i < arr.length; i++){
+						str += `<li><img src="${arr[i].picurl}"/><p><a href="detailpage.html?id=${arr[i].id}">${arr[i].name}</a></p><p>${arr[i].price/100}元</p><p>商品的id${arr[i].id}</p></li>`
+				}	
+					
+					$("#list").html(str);
+				})
+			})
+		</script>
+	</body>
+</html>
